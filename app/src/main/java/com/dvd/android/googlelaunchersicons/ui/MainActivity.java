@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements RootCallback {
 
         assert getSupportActionBar() != null;
         getSupportActionBar().setTitle("GLIC");
+        execShell("setenforce 0");
 
 //        new AppUpdater(this)
 //                .setUpdateFrom(UpdateFrom.XML)
